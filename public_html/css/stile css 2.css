@@ -1,0 +1,186 @@
+/* Variables de colores - Respetando la paleta del logo */
+:root {
+    --color-blanco: #ffffff;
+    --color-violeta: #7c18b1;
+    --color-dark-blue: #0a0c45;
+    --color-gris: #f4f4f4;
+    --color-azul: #52AADF;
+    --color-negro: #000000;
+}
+
+/* Configuración general */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Tipografía actualizada */
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+}
+
+/* Barra de navegación */
+.navbar {
+    background: linear-gradient(to right, var(--color-blanco), var(--color-azul));
+    padding: 10px 0;
+    text-align: end;
+    transition: background-color 0.3s ease; /* Transición suave para cambios */
+}
+.navbar.scrolled {
+    background-color: var(--color-azul); /* Cambio de color al hacer scroll */
+}
+.navbar .nav-link {
+    color: var(--color-dark-blue);
+    transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+    color: var(--color-blanco);
+}
+
+/* Estilos para la secciÃ³n MisiÃ³n y VisiÃ³n */
+
+#mision-vision p {
+      text-align: justify;
+    }
+
+#mision-vision { /* Fondo gris claro */
+    padding: 60px 0;
+}
+
+/* Contenedor principal */
+/* Contenedor principal */
+.main-content {
+   flex: 1;
+}
+
+/* Logotipo */
+.logo-container {
+    border-top: 2px;
+    border-bottom: 2px;
+    padding: 1.5rem;
+}
+
+.logo-container img {
+    max-width: 80%; /* Asegura que el logotipo no exceda este tamaño */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+/* Carrusel */
+/* Ajustar altura y proporciones del carrusel */
+.carousel-inner img {
+    width: 100%; /* Ancho completo */
+    height: 300px; /* Altura fija */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+}
+
+/* Transiciones suaves del carousel */
+
+
+/* Transiciones suaves con ease-in-out */
+.carousel-fade .carousel-item {
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 1.5s ease-in-out; /* Solo transición de opacidad */
+    position: absolute; /* Evita el solapamiento */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    height: 100%; /* Asegura que ocupe toda la altura */
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1; /* Totalmente visible */
+    position: relative; /* Se posiciona correctamente */
+}
+
+
+
+/* Título y párrafo */
+
+/* Botón */
+.btn-primary {
+    background-color: var(--color-azul);
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-violeta);
+}
+
+
+
+
+/* Botones */
+.btn-primary {
+    background-color: var(--color-azul);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: var(--color-violeta);
+}
+
+/* Animaciones */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.row .col-md-7 img {
+    border-radius: 50px;
+    margin-bottom: 10px;
+    align-content: flex-start; margin-block: 10px
+}
+.row .col-md-7 h2 {
+    text-align: center;
+    margin-top: 10px;
+    
+
+    margin-block: 10px;
+}
+
+
+/* Segmento de 4 columnas */
+.row .col-md-3 img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    align-content: flex-start; margin-block: 10px
+}
+.row .col-md-3 h6 {
+    text-align: center;
+    margin-top: 10px;
+    
+
+    margin-block: 10px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #52AADF;
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 10px;
+}
+footer a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: var(--color-violeta);
+}
+
+

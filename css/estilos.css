@@ -1,0 +1,94 @@
+
+
+/* Estilos Generales */
+body {
+    background-color: var(--color-blanco);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Columna de texto en el carrusel */
+.service-content p {
+    text-align: center; /* Centrar el texto */
+    font-size: 1.2rem; /* Ajuste de tamaño de fuente */
+    color: var(--color-negro); /* Color del texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+    line-height: 0.7; /* Espaciado entre líneas */
+}
+
+/* Ajuste de los botones en el carrusel */
+.service-content .btn {
+    font-size: 0.9rem; /* Botón más pequeño */
+    padding: 10px 20px; /* Tamaño reducido */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Logotipo centrado en la columna derecha */
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Ajustes de botones */
+.service-content .btn {
+    font-size: 0.9rem; /* Tamaño reducido */
+    padding: 10px 20px; /* Tamaño reducido */
+    border-radius: 5px;
+}
+
+/* Ajustes de la columna de logotipo */
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+/* Ajustes del carrusel */
+.carousel-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Footer */
+footer {
+    background-color: var(--color-azulmarino);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: var(--color-verde);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--color-morado);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .col-md-6, .col-12 {
+        padding: 0 15px;
+    }
+
+    .carousel-item {
+        padding: 20px;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        background-color: var(--color-morado); /* Mejor visibilidad de los controles */
+    }
+}

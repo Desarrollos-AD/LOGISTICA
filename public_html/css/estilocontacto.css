@@ -1,0 +1,178 @@
+/* Variables de colores - Respetando la paleta del logo */
+:root {
+    --color-blanco: #ffffff;
+    --color-violeta: #7c18b1;
+    --color-dark-blue: #0a0c45;
+    --color-gris: #f4f4f4;
+    --color-azul: #52AADF;
+    --color-negro: #000000;
+}
+
+/* Configuración general */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    padding-bottom: 3rem; /* Espacio suficiente para que el contenido no se solape con el footer */
+}
+
+/* Barra de navegación */
+.navbar {
+    background: linear-gradient(to right, var(--color-blanco), var(--color-azul));
+    padding: 10px 0;
+    text-align: end;
+    transition: background-color 0.3s ease; /* Transición suave para cambios */
+}
+.navbar.scrolled {
+    background-color: var(--color-azul); /* Cambio de color al hacer scroll */
+}
+.navbar .nav-link {
+    color: var(--color-dark-blue);
+    transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+    color: var(--color-blanco);
+}
+
+/* Contenedor principal */
+.main-content {
+    padding: 2rem 1rem;
+}
+
+/* Carrusel */
+.carousel {
+    position: relative;
+    margin-bottom: 30px;
+}
+.carousel-inner img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* Título y párrafo */
+
+
+
+
+/* Botón */
+.btn-primary {
+    background-color: var(--color-azul);
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-violeta);
+}
+
+
+
+/* Controles del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-blanco);
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--color-dark-blue);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.carousel-control-prev {
+    left: -50px;
+}
+.carousel-control-next {
+    right: -50px;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: var(--color-azul);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 25px;
+    height: 25px;
+    background-color: var(--color-negro);
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--color-azul);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: var(--color-violeta);
+}
+
+/* Animaciones */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Segmento de 4 columnas */
+.row .col-md-3 img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    align-content: flex-start; margin-block: 10px
+}
+.row .col-md-3 h6 {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+
+    margin-block: 10px;
+}
+
+
+/* Footer   allways in the bottom   */    
+/* Footer always at the bottom */
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  background-color: var(--color-azul);
+  text-align: center;
+  z-index: 10; /* Asegura que el footer esté siempre por encima de otros elementos */
+}
+
+
+
+/* ... El resto de tu código CSS sigue igual */
+
+
+footer a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+footer a:hover {
+    color: var(--color-violeta);
+}
+

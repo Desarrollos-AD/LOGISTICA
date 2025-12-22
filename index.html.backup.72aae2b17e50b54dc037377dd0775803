@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logística Portuaria - Página Principal</title>
+    <link rel="icon" href="images/logo.ico" >
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stile%20css%202.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.ico" alt="Logo de la empresa"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item active"><a class="nav-link" href="terminos.html">Términos de Uso</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <div class="container-fluid main-content mt-5 pt-1">
+        <div class="row g-1 py-5">
+            <!-- Columna izquierda: Carrusel -->
+            <div class="col-md-7 col-11 p-4">
+                <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <!-- Diapositiva 1 -->
+        <div class="carousel-item active">
+            <div class="text-center">
+                <h2> <strong> Cada operación es única </strong></h2>
+                <p>Administración de rutas terrestres para entregas eficientes.
+</p>
+                <img src="images/carousel%201.png" class="img-fluid w-100" alt="Carrusel 1">
+                <a href="contacto.html" class="btn btn-primary mt-3">Consulta con un experto</a>
+            </div>
+        </div>
+        <!-- Diapositiva 2 -->
+        <div class="carousel-item">
+            <div class="text-center">
+                <h2><strong>Simplifica tu operación</strong></h2>
+                <p>Facilitación de Transporte y Trámites.</p>
+                <img src="images/carousel%202.png" class="img-fluid w-100" alt="Carrusel 2">
+                <a href="contacto.html" class="btn btn-primary mt-3">Contacta para mas información</a>
+            </div>
+        </div>
+        <!-- Diapositiva 3 -->
+        <div class="carousel-item">
+            <div class="text-center">
+                <h2> <strong>Servicios para la Cadena de Suministro </strong></h2>
+                <p>Empaque, cartegorizacion y manejo de materiales, asi como asesoria en carga especializa.</p>
+                <img src="images/carousel%203.png" class="img-fluid w-100" alt="Carrusel 3">
+                <a href="contacto.html" class="btn btn-primary mt-3">Contáctanos</a>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>
+
+            <!-- Columna derecha: Logotipo -->
+            <div class="col-md-5 col-12 text-center d-flex justify-content-center align-items-center py">
+            <div class="logo-container p-4" style="border-top: 2px; border-bottom: 2px">
+                <img src="images/LOGON.png" class="img-fluid" style="max-width: 80%; height: auto;" alt="Logo de la empresa">
+            </div>
+        </div>
+        </div>
+        
+
+        <!-- Segmento de 4 columnas -->
+        <section id="galeria-servicios" class="py-5">
+            <div class="container-fluid px-1">
+                <div class="row gx-1">
+                    <div class="col-6 col-md-3" id="img-servicio-1">
+                        <img src="images/back%20index%201.png" alt="Servicio 1" class="img-fluid w-100">
+                        <h6>Servicio de Maniobras marítimas</h6>
+                    </div>
+                    <div class="col-6 col-md-3" id="img-servicio-2">
+                        <img src="images/back%20index%202.png" alt="Servicio 2" class="img-fluid w-100">
+                        <h6>Logística aérea y marítima</h6>
+</div>
+                    <div class="col-6 col-md-3" id="img-servicio-3">
+                        <img src="images/back%20index%203.png" alt="Servicio 3" class="img-fluid w-100">
+                        <h6> Almacenamiento seguro</h6>
+                    </div>
+                    <div class="col-md-3 col-6 text-center">
+                <h6>Consultoría Financiera</h6>
+                <p>Asesoría diseñada para mejorar la rentabilidad y eficiencia en el sector transporte.</p>
+                <a href="contacto.html" class="btn btn-primary">Más información</a>
+            </div>
+                </div> </div>
+                </section> 
+              </div>
+
+    <!-- Footer --> 
+    <footer class="footer">
+        <p>&copy; 2024 Logística. Todos los derechos reservados.</p>
+        <p><a href="terminos.html" class="text-white">Términos y Condiciones de Uso</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

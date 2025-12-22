@@ -1,0 +1,120 @@
+/* Variables de colores - Respetando la paleta del logo */
+:root {
+    --color-blanco: #ffffff;
+    --color-violeta: #7c18b1;
+    --color-dark-blue: #0a0c45;
+    --color-gris: #f8f9fa; /* Fondo claro común */
+    --color-azul: #52AADF;
+    --color-negro: #000000;
+}
+
+
+/* Barra de navegación */
+.navbar {
+    background: linear-gradient(to right, var(--color-blanco), var(--color-azul));
+    padding: 10px 0;
+    text-align: end;
+    transition: background-color 0.3s ease; /* Transición suave para cambios */
+}
+.navbar.scrolled {
+    background-color: var(--color-azul); /* Cambio de color al hacer scroll */
+}
+.navbar .nav-link {
+    color: var(--color-dark-blue);
+    transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+    color: var(--color-blanco);
+}
+
+/* Configuración general */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-gris); /* Fondo común */
+    color: var(--color-negro);
+}
+
+/* Segmentos principales */
+#descripcion-servicios,
+#informacion-servicios {
+    padding: 2rem;
+    background-color: var(--color-gris); /* Fondo compartido */
+    margin-bottom: 2rem; /* Espaciado entre segmentos */
+}
+
+#galeria-servicios,
+#galeria-servicios-2,
+#galeria-servicios-3{
+    padding: 2rem 0;
+    background-color: var(--color-gris); /* Fondo compartido */
+}
+
+/* Títulos */
+#descripcion-servicios h2,
+#informacion-servicios h2 {
+    color: var(--color-azul);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Párrafos */
+#descripcion-servicios p,
+#informacion-servicios p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Imágenes en bloques */
+#galeria-servicios .img-fluid,
+#galeria-servicios-2 .img-fluid,
+#galeria-servicios-3 .img-fluid {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    opacity: 0.9; /* Opacidad inicial */
+}
+
+/* Imágenes en bloques */
+
+
+#galeria-servicios .img-fluid:hover,
+#galeria-servicios-2 .img-fluid:hover,
+#galeria-servicios-3 .img-fluid:hover{
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    opacity: 1; /* Aumenta la opacidad al 100% */
+}
+
+/* Configuración responsiva para las imágenes */
+#galeria-servicios .col-6,
+#galeria-servicios-2 , #galeria-servicios-3.col-6 {
+    padding: 0; /* Sin márgenes entre imágenes */
+}
+
+@media (max-width: 768px) {
+    #galeria-servicios .img-fluid,
+    #galeria-servicios-2 .img-fluid {
+        margin-bottom: 1rem; /* Separación entre imágenes en móviles */
+    }
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--color-violeta);
+}

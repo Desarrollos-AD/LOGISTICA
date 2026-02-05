@@ -1,0 +1,17 @@
+@use '../../../styles/base/variables' as v;
+
+.footer {
+    background-color: v.$primario;
+    color: v.$blanco;
+    text-align: center;
+
+    a {
+        color: v.$blanco;
+        text-decoration: none;
+        transition: color 0.5s ease-in-out;
+
+        &:hover {
+            color: v.$secundario;
+        }
+    }
+}

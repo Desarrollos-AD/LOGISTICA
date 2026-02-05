@@ -1,0 +1,65 @@
+.navbar {
+    background: linear-gradient(to right, var(--color-blanco), var(--color-azul));
+    padding: 10px 0;
+    text-align: end;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: var(--color-azul);
+}
+
+.navbar .nav-link {
+    color: var(--color-dark-blue);
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-blanco);
+}
+
+/* Barra de navegación */
+.navbar {
+    background: linear-gradient(to right, var(--color-blanco), var(--color-azul));
+    padding: 10px 0;
+    text-align: end;
+    transition: background-color 0.3s ease;
+    /* Transición suave para cambios */
+}
+
+.navbar.scrolled {
+    background-color: var(--color-azul);
+    /* Cambio de color al hacer scroll */
+}
+
+.navbar .nav-link {
+    color: var(--color-dark-blue);
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-blanco);
+}
+
+/* Barra de navegación */
+.navbar {
+    background: linear-gradient(to right, var(--color-blanco), var(--color-azul));
+    padding: 10px 0;
+    text-align: end;
+    transition: background-color 0.3s ease;
+    /* Transición suave para cambios */
+}
+
+.navbar.scrolled {
+    background-color: var(--color-azul);
+    /* Cambio de color al hacer scroll */
+}
+
+.navbar .nav-link {
+    color: var(--color-dark-blue);
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: var(--color-blanco);
+}

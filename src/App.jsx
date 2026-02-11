@@ -6,7 +6,6 @@ import Footer from "./components/layouts/Footer/Footer";
 function App() {
   return (
     <>
-      <Nav />
       <AppRouter />
       <Footer />
     </>

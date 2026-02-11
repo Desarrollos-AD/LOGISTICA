@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Inicio from "../pages/Inicio";
 import Servicios from "../pages/Servicios";
 import Nosotros from "../pages/Nosotros";
-import Contacto from "../pages/Contacto";
+import Contacto from "../pages/Contacto/Contacto";
 
 function AppRouter() {
   return (

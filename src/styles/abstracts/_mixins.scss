@@ -1,0 +1,20 @@
+@use '../base/variables' as v;
+
+@mixin btn($bg_color) {
+    display: inline-block;
+    padding: 2rem 3rem;
+    background-color: $bg_color;
+    border-radius: v.$b_radius;
+    cursor: pointer;
+    transition: background-color 200ms ease-out;
+
+    &:hover {
+        background-color: darken($color: $bg_color, $amount: 7);
+    }
+}
+
+@mixin grid($columnas, $gap) {
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $gap;
+}

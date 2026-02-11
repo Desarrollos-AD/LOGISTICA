@@ -2,16 +2,42 @@
 
 .footer {
     background-color: v.$primario;
-    color: v.$blanco;
-    text-align: center;
+    margin-top: -.5rem;
 
-    a {
-        color: v.$blanco;
-        text-decoration: none;
-        transition: color 0.5s ease-in-out;
+    &__contenido {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 20rem;
 
-        &:hover {
-            color: v.$secundario;
+    &--img {
+            flex: 1;
+            height: 100%;
+            padding: 2rem;
+    
+            img {
+                height: 100%;
+                width: auto;
+                object-fit: contain;
+                background-color: v.$blanco;
+                padding: 1rem;
+                border-radius: 50%;
+            }
+        }
+
+        &--info {
+            color: v.$blanco;
+            flex: 2;
+
+            a {
+                text-decoration: none;
+                transition: color 0.5s ease-in-out;
+
+                &:hover {
+                    color: v.$secundario;
+                }
+            }
+
         }
     }
 }

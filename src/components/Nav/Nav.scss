@@ -1,65 +1,47 @@
+@use '../../styles/base/variables' as v;
+
+.barra_header {
+    width: 80%;
+    position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: v.$fondo;
+    border-bottom-right-radius: 7rem;
+}
+
 .navbar {
-    background: linear-gradient(to right, var(--color-blanco), var(--color-azul));
-    padding: 10px 0;
-    text-align: end;
-    transition: background-color 0.3s ease;
-}
+    display: flex;
+    flex-direction: row;
+    height: 8rem;
+    justify-content: space-between;
 
-.navbar.scrolled {
-    background-color: var(--color-azul);
-}
+    &__logo {
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
 
-.navbar .nav-link {
-    color: var(--color-dark-blue);
-    transition: color 0.3s ease;
-}
+    &__nav {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
 
-.navbar .nav-link:hover {
-    color: var(--color-blanco);
-}
+        &--item {
+            list-style: none;
 
-/* Barra de navegación */
-.navbar {
-    background: linear-gradient(to right, var(--color-blanco), var(--color-azul));
-    padding: 10px 0;
-    text-align: end;
-    transition: background-color 0.3s ease;
-    /* Transición suave para cambios */
-}
+            .nav__link {
+                color: v.$negro;
+                padding: 1rem 2rem;
+                border-radius: v.$b_radius;
 
-.navbar.scrolled {
-    background-color: var(--color-azul);
-    /* Cambio de color al hacer scroll */
-}
+                &:hover {
+                    color: v.$blanco;
+                    background-color: v.$primario;
+                }
+            }
 
-.navbar .nav-link {
-    color: var(--color-dark-blue);
-    transition: color 0.3s ease;
-}
-
-.navbar .nav-link:hover {
-    color: var(--color-blanco);
-}
-
-/* Barra de navegación */
-.navbar {
-    background: linear-gradient(to right, var(--color-blanco), var(--color-azul));
-    padding: 10px 0;
-    text-align: end;
-    transition: background-color 0.3s ease;
-    /* Transición suave para cambios */
-}
-
-.navbar.scrolled {
-    background-color: var(--color-azul);
-    /* Cambio de color al hacer scroll */
-}
-
-.navbar .nav-link {
-    color: var(--color-dark-blue);
-    transition: color 0.3s ease;
-}
-
-.navbar .nav-link:hover {
-    color: var(--color-blanco);
+        }
+    }
 }

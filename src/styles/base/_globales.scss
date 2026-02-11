@@ -13,8 +13,7 @@ body {
     margin: 0;
     color: v.$negro;
     font-family: v.$font_primario;
-    background-color: v.$gris;
-    padding-bottom: 3rem;
+    background-color: v.$fondo;
 }
 
 *,
@@ -27,12 +26,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.contenedor {
-    margin: 0 auto;
-    width: min(90%, 120rem);
-    overflow: hidden;
 }
 
 a {

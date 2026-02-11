@@ -1,0 +1,17 @@
+@use '../abstracts/_mixins.scss' as mx;
+@use '../base/variables' as v;
+
+
+.btn{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn__primario{
+    @include mx.btn(v.$primario);
+}
+.btn__primario{
+    @include mx.btn(v.$primario);
+}
+.btn__terciario{
+    @include mx.btn(v.$gris);
+}

@@ -4,48 +4,45 @@ import logo from "../../assets/img/logo.png";
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
-      <div className="container-fluid">
-        <NavLink to="/" className="navbar-brand">
-          <img src={logo} alt="Logo de la empresa" width="400" height="400" />
-        </NavLink>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <NavLink to="/" className="nav-link">
+    <div className="barra_header">
+      <div className="contenedor">
+        <nav className="navbar">
+          <div className=" navbar__logo ">
+            <NavLink to="/" className="">
+              <img
+                src={logo}
+                alt="Logo de la empresa"
+                width="400"
+                height="400"
+                loading="eager"
+              />
+            </NavLink>
+          </div>
+          <ul className="navbar__nav">
+            <li className="navbar__nav--item">
+              <NavLink to="/" className="nav__link">
                 Inicio
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink to="/servicios" className="nav-link">
+            <li className="navbar__nav--item">
+              <NavLink to="/servicios" className="nav__link">
                 Servicios
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink to="/nosotros" className="nav-link">
+            <li className="navbar__nav--item">
+              <NavLink to="/nosotros" className="nav__link">
                 Nosotros
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink to="/contacto" className="nav-link">
+            <li className="navbar__nav--item">
+              <NavLink to="/contacto" className="nav__link">
                 Contacto
               </NavLink>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
-    </nav>
+    </div>
   );
 }
 

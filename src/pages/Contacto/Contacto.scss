@@ -1,0 +1,77 @@
+@use '../../styles/base/variables' as v;
+@use '../../styles/abstracts/mixins' as mx;
+
+.contacto {
+    background-image: url(../../assets/img/wave.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 60vh;
+
+    &__contenido {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10rem;
+
+        &--info {
+            color: v.$blanco;
+            flex: 1;
+
+            h4 {
+                margin-top: 10rem;
+                line-height: 1.5;
+            }
+        }
+
+        &--img {
+            flex: 2;
+            color: v.$blanco;
+        }
+    }
+}
+
+.opciones {
+    height: 100vh;
+    background-image: url(../../assets/img/mapa.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &__contenedor {
+        display: flex;
+        gap: 6rem;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 16px;
+        margin: 3rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(5.9px);
+        -webkit-backdrop-filter: blur(5.9px);
+
+
+        &--mapa,
+        &--formulario {
+            h3{
+                color: v.$secundario;
+                font-size: clamp(2rem, 2.5vw, 3rem);
+            }
+            
+            p{
+                text-align: justify;
+                margin: 5rem 0;
+            }
+        }
+        
+        &--mapa {
+            flex: 1;
+            margin: 5rem 5rem 5rem 0 ;
+
+        }
+
+        &--formulario {
+            flex: 1;
+            margin: 5rem 0 5rem 5rem;
+
+        }
+    }
+}

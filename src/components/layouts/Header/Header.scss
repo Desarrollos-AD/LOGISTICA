@@ -1,0 +1,92 @@
+@use '../../../styles/base/variables' as v;
+
+.header__nav {
+    position: absolute;
+}
+
+.hero__shape {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url('../../../assets/img/back_1.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 4rem;
+    // padding: 100px;
+    // display: flex;
+    // align-items: center;
+    // position: relative;
+    overflow: visible;
+
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 245px;
+        width: 40px;
+        height: 40px;
+        background: radial-gradient(circle at bottom right, transparent 70%, v.$fondo 71%);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        width: 60px;
+        height: 60px;
+        background: radial-gradient(circle at bottom right, transparent 70%, v.$fondo 72%);
+    }
+
+    &--contenido {
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        justify-content: space-evenly;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-weight: v.$black;
+    }
+
+    h3 {
+        font-weight: v.$bold;
+    }
+
+    h1,
+    h3 {
+        color: v.$blanco;
+        text-align: left;
+    }
+
+    p {
+        color: v.$blanco;
+    }
+
+    &--contacto,
+    &--descripcion {
+        width: 45%;
+    }
+
+    &--contacto {
+        padding-top: 1rem;
+        background-color: v.$blanco;
+        border-radius: v.$b_radius;
+        height: 17rem;
+        clip-path: polygon(0 0, 59% 0, 70% 25%, 100% 25%, 100% 99%, 0 100%);
+
+        h4 {
+            text-align: left;
+
+        }
+
+        .btns__header {
+            display: flex;
+            gap: 2rem;
+
+        }
+    }
+}

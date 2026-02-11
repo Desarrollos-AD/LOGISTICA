@@ -1,0 +1,82 @@
+@use '../../styles/base/variables' as v;
+@use '../../styles//abstracts/mixins' as mx;
+
+.rutas {
+    display: flex;
+    align-items: center;
+    height: 40rem;
+    background-color: v.$dark_blue;
+    width: 98%;
+    border-radius: 2rem;
+    color: v.$blanco;
+    margin: 0 auto;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Operaciones {
+    display: flex;
+
+    &__img {
+        flex: 2;
+    }
+
+    &__conte {
+        flex: 1;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 75%;
+            height: 58%;
+            background-color: #09a1ff;
+            border-radius: 3rem;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -22%);
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            text-align: justify;
+            font-size: clamp(1.8rem, 2vw, 2.2rem);
+        }
+
+        &--items {
+            display: flex;
+            flex-direction: column;
+            margin: 5rem 0;
+        }
+
+        &--item {
+            margin: 2rem 0;
+            width: 35rem;
+            background: rgba(0, 157, 255, 0.295);
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(14.2px);
+            -webkit-backdrop-filter: blur(14.2px);
+            justify-content: center;
+
+
+            h3 {
+                font-weight: bold;
+                color: v.$blanco;
+            }
+        }
+
+        &--item1 {}
+
+        &--item2 {
+            margin-left: 10rem;
+        }
+
+        &--item3 {
+            margin-left: 4rem;
+        }
+    }
+
+
+
+}

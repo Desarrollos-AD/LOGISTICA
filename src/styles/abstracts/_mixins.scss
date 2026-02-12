@@ -1,3 +1,4 @@
+@use "sass:color";
 @use '../base/variables' as v;
 
 @mixin btn($bg_color) {
@@ -9,7 +10,7 @@
     transition: background-color 200ms ease-out;
 
     &:hover {
-        background-color: darken($color: $bg_color, $amount: 7);
+        background-color: color.adjust($bg_color, $lightness: -7%);
     }
 }
 
@@ -17,4 +18,46 @@
     display: grid;
     grid-template-columns: repeat($columnas, 1fr);
     gap: $gap;
+}
+
+@mixin telefono-pequeno {
+    @media (min-width: v.$telefono_pequeno) {
+        @content;
+    }
+}
+
+@mixin telefono-mediano {
+    @media (min-width: v.$telefono_mediano) {
+        @content;
+    }
+}
+
+@mixin telefono-grande {
+    @media (min-width: v.$telefono_grande) {
+        @content;
+    }
+}
+
+@mixin tablet-pequena {
+    @media (min-width: v.$tablet_pequena) {
+        @content;
+    }
+}
+
+@mixin tablet-grande {
+    @media (min-width: v.$tablet_grande) {
+        @content;
+    }
+}
+
+@mixin desktop-mediana {
+    @media (min-width: v.$desktop_mediana) {
+        @content;
+    }
+}
+
+@mixin desktop-grande {
+    @media (min-width: v.$desktop_grande) {
+        @content;
+    }
 }

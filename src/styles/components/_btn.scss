@@ -9,8 +9,10 @@
 .btn__primario{
     @include mx.btn(v.$primario);
 }
-.btn__primario{
-    @include mx.btn(v.$primario);
+.btn__secundario{
+    @include mx.btn(v.$secundario);
+    color: v.$blanco;
+    border: none
 }
 .btn__terciario{
     @include mx.btn(v.$gris);

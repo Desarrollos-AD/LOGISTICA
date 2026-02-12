@@ -1,77 +1,103 @@
 @use '../../styles/base/variables' as v;
 @use '../../styles/abstracts/mixins' as mx;
 
-.contacto {
-    background-image: url(../../assets/img/wave.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 60vh;
-
-    &__contenido {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10rem;
-
-        &--info {
-            color: v.$blanco;
-            flex: 1;
-
-            h4 {
-                margin-top: 10rem;
-                line-height: 1.5;
-            }
-        }
-
-        &--img {
-            flex: 2;
-            color: v.$blanco;
-        }
-    }
-}
-
 .opciones {
-    height: 100vh;
     background-image: url(../../assets/img/mapa.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 
+    @include mx.tablet-pequena {
+        height: 102vh;
+    }
+
     &__contenedor {
         display: flex;
-        gap: 6rem;
-        background: rgba(255, 255, 255, 0.15);
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.562);
         border-radius: 16px;
         margin: 3rem;
+        gap: 2rem;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(5.9px);
         -webkit-backdrop-filter: blur(5.9px);
 
+        @include mx.tablet-pequena {
+            flex-direction: row;
+        }
 
         &--mapa,
         &--formulario {
-            h3{
+            h3 {
                 color: v.$secundario;
                 font-size: clamp(2rem, 2.5vw, 3rem);
             }
-            
-            p{
+
+            p {
                 text-align: justify;
-                margin: 5rem 0;
+                margin: 2rem 0;
+
+                @include mx.tablet-pequena {
+                    margin: 5rem 0;
+                }
             }
         }
-        
+
         &--mapa {
             flex: 1;
-            margin: 5rem 5rem 5rem 0 ;
+            margin: 0 0 2rem 0;
 
+            @include mx.tablet-pequena {
+                margin: 5rem 5rem 5rem 0;
+            }
         }
 
         &--formulario {
             flex: 1;
-            margin: 5rem 0 5rem 5rem;
+            margin: 0;
 
+            @include mx.tablet-pequena {
+                margin: 5rem 0 5rem 5rem;
+            }
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1rem;
+
+        &__group {
+            display: flex;
+            gap: 1rem;
+
+            &--item,
+            &--textArea {
+                margin: 1.5rem 0;
+            }
+
+            &--textArea {
+                textarea {
+                    height: 24rem;
+
+                }
+            }
+        }
+
+        input,
+        textarea {
+            border: none;
+            width: 100%;
+            padding: 1rem;
+            border-radius: .5rem;
+            background-color: rgba(7, 21, 31, 0.3);
+            color: v.$blanco;
+            font-weight: bold;
+        }
+
+        label {
+            color: v.$secundario;
+            font-weight: v.$bold;
         }
     }
 }

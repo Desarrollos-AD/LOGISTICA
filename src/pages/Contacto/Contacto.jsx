@@ -2,6 +2,7 @@ import "../Contacto/Contacto.scss";
 import Nav from "../../components/Nav/Nav";
 import avion from "../../assets/img/avion.png";
 import { useState } from "react";
+import SubHeader from "../../components/layouts/SubHeader/SubHeader";
 
 function Contacto() {
   const [form, setForm] = useState({
@@ -51,23 +52,15 @@ function Contacto() {
     <>
       <Nav />
       <main>
-        <div className="contacto">
-          <div className="contenedor">
-            <div className="contacto__contenido">
-              <div className="contacto__contenido--info">
-                <h1>Contáctenos</h1>
-                <h4>
-                  En Logística Directa estamos listos para diseñar una solución
-                  eficiente, segura y estratégica para su empresa. Permítanos
-                  optimizar su transporte, distribución y control de mercancías.
-                </h4>
-              </div>
-              <div className="contacto__contenido--img">
-                <img src={avion} alt="Imagen avion" />
-              </div>
-            </div>
-          </div>
-        </div>
+        <SubHeader
+          title="Contáctenos"
+          subtitle=" En Logística Portuaria Directa estamos listos para diseñar una solución
+              eficiente, segura y estratégica para su empresa. Permítanos
+              optimizar su transporte, distribución y control de mercancías."
+          img={avion}
+          alt={"Imagen avion"}
+        />
+
         <div className="opciones">
           <div className="contenedor">
             <div className="opciones__contenedor">
@@ -82,35 +75,37 @@ function Contacto() {
                   </p>
 
                   {enviado && (
-                    <p className="success">Mensaje enviado correctamente ✅</p>
+                    <p className="success">Mensaje enviado correctamente</p>
                   )}
                   {error && <p className="error">{error}</p>}
 
                   <form onSubmit={handleSubmit} noValidate>
-                    <div className="contenedor">
-                      <div className="form-group">
-                        <label>Nombre</label>
-                        <input
-                          type="text"
-                          name="nombre"
-                          value={form.nombre}
-                          onChange={handleChange}
-                          placeholder="Tu nombre"
-                        />
+                    <div className="form">
+                      <div className="form__group">
+                        <div className="form__group--item">
+                          <label>Nombre</label>
+                          <input
+                            type="text"
+                            name="nombre"
+                            value={form.nombre}
+                            onChange={handleChange}
+                            placeholder="Tu nombre"
+                          />
+                        </div>
+
+                        <div className="form__group--item">
+                          <label>Email</label>
+                          <input
+                            type="email"
+                            name="email"
+                            value={form.email}
+                            onChange={handleChange}
+                            placeholder="tu@email.com"
+                          />
+                        </div>
                       </div>
 
-                      <div className="form-group">
-                        <label>Email</label>
-                        <input
-                          type="email"
-                          name="email"
-                          value={form.email}
-                          onChange={handleChange}
-                          placeholder="tu@email.com"
-                        />
-                      </div>
-
-                      <div className="form-group">
+                      <div className="form__group--textArea">
                         <label>Mensaje</label>
                         <textarea
                           name="mensaje"
@@ -121,7 +116,9 @@ function Contacto() {
                         />
                       </div>
 
-                      <button type="submit">Enviar Mensaje</button>
+                      <button type="submit" className="btn__secundario">
+                        Enviar Mensaje
+                      </button>
                     </div>
                   </form>
                 </div>

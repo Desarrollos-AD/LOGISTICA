@@ -1,0 +1,38 @@
+@use '../../../styles/base/variables' as v;
+@use '../../../styles/abstracts/mixins' as mx;
+
+.subHeader {
+    background-image: url(../../../assets/img/wave.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 60vh;
+
+    &__contenido {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10rem;
+
+        @include mx.tablet-pequena {
+            flex-direction: row;
+
+        }
+
+        &--info {
+            color: v.$blanco;
+            flex: 1;
+
+            h4 {
+                margin-top: 10rem;
+                line-height: 1.5;
+            }
+        }
+
+        &--img {
+            flex: 2;
+            color: v.$blanco;
+        }
+    }
+}

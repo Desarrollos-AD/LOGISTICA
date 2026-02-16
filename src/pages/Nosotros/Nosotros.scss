@@ -1,0 +1,22 @@
+@use '../../styles/base/variables' as v;
+@use '../../styles/abstracts/mixins' as mx;
+
+.intercalar {
+    &__img {
+        &--figura {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 30ch), 1fr));
+            gap: 5vmax;
+            width: min(100ch, 100%);
+            margin-inline: auto;
+
+            &--efecto {
+                mask: url(https://assets.codepen.io/1101822/circles-mask-whole.svg) no-repeat center;
+                width: 100%;
+                display: block;
+                aspect-ratio: 1;
+                object-fit: cover;
+            }
+        }
+    }
+}

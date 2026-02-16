@@ -23,25 +23,25 @@ function Operaciones() {
         </div>
       </div>
 
-      <section className="Operaciones">
-        <div className="Operaciones__img">
+      <section className="intercalar">
+        <div className="intercalar__img">
           <img src={grua} alt="Imagen Grúa" loading="lazy" />
         </div>
-        <div className="Operaciones__conte">
+        <div className="intercalar__conte">
           <h2>Operaciones que fluyen</h2>
           <p>
             Menos fricción, más resultados. Nuestra metodología busca que cada
             operación se sienta ordenada, predecible y segura para nuestros
             clientes.
           </p>
-          <div className="Operaciones__conte--items">
-            <div className="Operaciones__conte--item Operaciones__conte--item1">
+          <div className="intercalar__conte--items">
+            <div className="intercalar__conte--item ">
               <h3> Procesos claros</h3>
             </div>
-            <div className="Operaciones__conte--item Operaciones__conte--item2">
+            <div className="intercalar__conte--item">
               <h3> Comunicación constante</h3>
             </div>
-            <div className="Operaciones__conte--item Operaciones__conte--item3">
+            <div className="intercalar__conte--item">
               <h3> Respuesta oportuna</h3>
             </div>
           </div>

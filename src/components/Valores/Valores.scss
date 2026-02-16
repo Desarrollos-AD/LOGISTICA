@@ -1,0 +1,208 @@
+@use '../../styles/base/variables' as v;
+@use '../../styles//abstracts/mixins' as mx;
+
+.valores__intro--wrapper {
+    position: relative;
+    height: 225vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mx.telefono-mediano {
+        height: 120vh;
+    }
+
+    @include mx.telefono-grande {
+        height: 110vh;
+    }
+
+    @include mx.tablet-pequena {
+        height: 80vh;
+    }
+
+    .intro {
+        text-align: justify;
+    }
+}
+
+.valores__contenido {
+    position: relative;
+    z-index: 2;
+    border-radius: v.$b_radius;
+    background-color: v.$primario;
+
+    .tabs_height {
+        height: 250vh;
+
+        @include mx.telefono-mediano {
+            height: 250vh;
+        }
+    }
+
+    .tabs_sticky-wrapper {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.valores__tabs {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1400px;
+    height: 80vh;
+    margin: 0 auto;
+    padding: 0 3.3%;
+
+    @media(max-width: 768px) {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 2rem;
+    }
+
+
+}
+
+.valores__tabs--left {
+    background-color: v.$dark_blue;
+    border-radius: v.$b_radius;
+    padding: 2rem;
+    color: v.$blanco;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+        text-align: justify !important;
+    }
+
+    .tabs_left-top {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+    .tabs_let-content {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        pointer-events: none;
+
+        .heading-style-h4 {
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 0;
+            text-align: justify;
+        }
+    }
+}
+
+.valores__tabs--right {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: v.$b_radius;
+    overflow: hidden;
+    background-color: #000;
+
+    .tabs_video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .tabs_video-gda-badge {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        width: 6rem;
+        z-index: 10;
+    }
+}
+
+.valores {
+    margin-top: 5rem;
+
+    h2 {
+        color: v.$primario;
+
+        span {
+            color: v.$negro;
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+
+    &__items {
+        margin-top: 3rem;
+        @include mx.grid(1, 2rem);
+        position: relative;
+
+        @include mx.telefono_mediano {
+            @include mx.grid(2, 2rem);
+        }
+
+        @include mx.tablet_pequena {
+            @include mx.grid(3, 2rem);
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        &--item {
+            background: rgba(255, 255, 255, 0.562);
+            border-radius: 1.5rem;
+            margin: 2rem 2rem;
+            padding: 0 3rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(5.9px);
+            -webkit-backdrop-filter: blur(5.9px);
+            height: 25rem;
+
+            &::after {
+                content: " ";
+                width: 5rem;
+                height: 5rem;
+                background-color: v.$dark_blue ;
+                position: absolute;
+                border-radius: 50%;
+                top: -1.5rem;
+                left: -1.5rem;
+            }
+
+            h3 {
+                color: v.$primario;
+            }
+        }
+    }
+}

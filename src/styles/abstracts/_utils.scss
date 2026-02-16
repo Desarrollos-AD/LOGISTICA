@@ -1,4 +1,5 @@
 @use '../base/variables' as v;
+@use '../../styles/abstracts/mixins' as mx;
 
 .contenedor {
     margin: 0 auto;
@@ -6,14 +7,89 @@
     overflow: hidden;
 }
 
-section{
+section {
     margin: 4rem 0;
 }
 
-.error{
+.error {
     background-color: v.$alerta;
     color: v.$blanco;
     padding: 1rem;
     border-radius: .5rem;
-    margin: -3rem 0 1rem 0 !important; 
+    margin: -3rem 0 1rem 0 !important;
+}
+
+.intercalar {
+    margin-top: 5rem;
+    @include mx.grid(1, 0rem);
+    align-items: center;
+
+    @include mx.telefono-grande {
+        @include mx.grid(2, 0rem);
+    }
+
+    &__img {
+        grid-row: 2/3;
+
+        @include mx.telefono-grande {
+            grid-row: 1/2;
+        }
+    }
+
+    &__conte {
+        flex: 1;
+        position: relative;
+        margin: 7rem 0 0 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 75%;
+            height: 58%;
+            background-color: #09a1ff;
+            border-radius: 3rem;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -22%);
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        &--items {
+            display: flex;
+            flex-direction: column;
+            margin: 5rem 0;
+            padding: 0rem;
+
+            @include mx.telefono-grande {
+                margin: 5rem 1.5rem;
+
+            }
+
+            >.intercalar__conte--item {
+                display: flex;
+                margin: 2rem 0;
+                width: 35rem;
+                background: rgba(0, 157, 255, 0.295);
+                border-radius: 16px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+                backdrop-filter: blur(14.2px);
+                -webkit-backdrop-filter: blur(14.2px);
+                justify-content: center;
+
+                h3 {
+                    font-weight: bold;
+                    color: v.$blanco;
+                }
+            }
+
+            >.intercalar__conte--item:nth-child(odd) {
+                align-self: flex-end;
+            }
+
+            >.intercalar__conte--item:nth-child(even) {
+                align-self: flex-start;
+            }
+        }
+    }
 }

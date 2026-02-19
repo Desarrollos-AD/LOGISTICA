@@ -1,9 +1,17 @@
 import "./Operaciones.scss";
 import grua from "../../assets/img/grua.png";
+import { motion } from "framer-motion";
+
 function Operaciones() {
   return (
     <div className="contenedor">
-      <div className="rutas">
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="rutas stagger-item "
+      >
         <div className="contenedor">
           <h2>Diseñamos rutas, no improvisamos</h2>
 
@@ -12,7 +20,7 @@ function Operaciones() {
             escenarios y trazamos rutas que reducen riesgos y mejoran
             resultados.
           </p>
-          <p>Un buen camino no es el más corto, es el más eficiente.</p>
+          <h4>Un buen camino no es el más corto, es el más eficiente.</h4>
 
           <p>
             La logística exige precisión diaria. Nuestro enfoque está basado en
@@ -21,13 +29,25 @@ function Operaciones() {
           </p>
           <p>Cuando el control es claro, la confianza es natura</p>
         </div>
-      </div>
+      </motion.div>
 
       <section className="intercalar">
-        <div className="intercalar__img">
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="intercalar__img"
+        >
           <img src={grua} alt="Imagen Grúa" loading="lazy" />
-        </div>
-        <div className="intercalar__conte">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="intercalar__conte"
+        >
           <h2>Operaciones que fluyen</h2>
           <p>
             Menos fricción, más resultados. Nuestra metodología busca que cada
@@ -45,7 +65,7 @@ function Operaciones() {
               <h3> Respuesta oportuna</h3>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </div>
   );

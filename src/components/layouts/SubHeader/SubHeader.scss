@@ -7,13 +7,14 @@
     background-position: center center;
     background-size: cover;
     height: 60vh;
+    display: flex;
+    align-items: center;
 
     &__contenido {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 10rem;
 
         @include mx.tablet-pequena {
             flex-direction: row;
@@ -31,7 +32,7 @@
         }
 
         &--img {
-            flex: 2;
+            flex: 1;
             color: v.$blanco;
         }
     }

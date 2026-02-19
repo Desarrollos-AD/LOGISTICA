@@ -1,14 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
-// import logo from "../assets/img/logo.png";
-import Carouser_1 from "../assets/img/carousel_1.jpg";
-import Carouser_2 from "../assets/img/carousel_2.png";
-import Carouser_3 from "../assets/img/carousel_3.png";
-// import logo from "../assets/img/logo.png";
-// import back_1 from "../assets/img/back_1.png";
-// import back_2 from "../assets/img/back_2.png";
-// import back_3 from "../assets/img/back_3.png";
 import Header from "../components/layouts/Header/Header";
-// import Carouser_4 from "../assets/img/carousel_4.jpg";
 import Nav from "../components/Nav/Nav";
 import Enfoque from "../components/Enfoque/Enfoque";
 import Precision from "../components/Precision/Precision";
@@ -40,8 +31,8 @@ function Inicio() {
                   <Link to="/contacto" className="btn__primario">
                     Contáctenos hoy
                   </Link>
-                  <Link href="#" className="btn__terciario">
-                    Contáctenos hoy
+                  <Link to="/servicios" className="btn__terciario">
+                    Servicios
                   </Link>
                 </div>
               </div>
@@ -53,7 +44,7 @@ function Inicio() {
 
       <Precision />
 
-      <Operaciones/>
+      <Operaciones />
     </>
   );
 }

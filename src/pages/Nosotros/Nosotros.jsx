@@ -1,13 +1,17 @@
 import SubHeader from "../../components/layouts/SubHeader/SubHeader";
+import Nav from "../../components/Nav/Nav";
 import nosotros from "../../assets/img/nosotros.png";
 import esencia from "../../assets/img/WE3.png";
 import Valores from "../../components/Valores/Valores";
+import { motion } from "framer-motion";
 
 import "./Nosotros.scss";
+import Operaciones from "../../components/Operaciones/Operaciones";
 
 function Nosotros() {
   return (
     <>
+      <Nav />
       <SubHeader
         title="Nosotros"
         subtitle="
@@ -17,7 +21,13 @@ function Nosotros() {
         alt="Imagen nosotros"
       />
       <div className="contenedor">
-        <div className="intercalar">
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="intercalar"
+        >
           <div className="intercalar__img intercalar__img--figura">
             <img
               className="intercalar__img--figura--efecto"
@@ -47,10 +57,12 @@ function Nosotros() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
-      <Valores/>
+      <Valores />
+
+      <Operaciones />
     </>
   );
 }

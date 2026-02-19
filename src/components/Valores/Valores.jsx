@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Valores.scss";
+import { motion } from "framer-motion";
 
 const VALORES = [
   {
@@ -101,7 +102,14 @@ const YodaSection = () => {
 
   return (
     <div className="valores" ref={containerRef}>
-      <div className="valores__intro--wrapper" ref={introRef}>
+      <motion.div
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="valores__intro--wrapper"
+        ref={introRef}
+      >
         <div className="intro">
           <div className="contenedor" ref={pinRef}>
             <h2 className="valores-title">
@@ -118,16 +126,24 @@ const YodaSection = () => {
 
             <div className="valores__items">
               {VALORES.map((valor, index) => (
-                <div className="valores__items--item" key={index}>
+                <motion.div
+                  className="valores__items--item"
+                  whileHover={{
+                    y: -12,
+                    boxShadow: "0px 25px 50px rgba(0,0,0,0.2)",
+                  }}
+                  transition={{ type: "spring", stiffness: 200 }}
+                  key={index}
+                >
                   <h3>{valor.valor}</h3>
                   <p>{valor.descripcion}</p>
-                </div>
+                </motion.div>
               ))}
               ;
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <section className="valores__contenido">
         <div className="tabs_height">

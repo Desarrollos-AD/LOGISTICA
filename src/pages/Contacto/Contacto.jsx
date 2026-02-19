@@ -3,6 +3,7 @@ import Nav from "../../components/Nav/Nav";
 import avion from "../../assets/img/avion.png";
 import { useState } from "react";
 import SubHeader from "../../components/layouts/SubHeader/SubHeader";
+import { motion } from "framer-motion";
 
 function Contacto() {
   const [form, setForm] = useState({
@@ -61,7 +62,11 @@ function Contacto() {
           alt={"Imagen avion"}
         />
 
-        <div className="opciones">
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }} className="opciones">
           <div className="contenedor">
             <div className="opciones__contenedor">
               <div className="opciones__contenedor--formulario">
@@ -145,7 +150,7 @@ function Contacto() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </main>
     </>
   );

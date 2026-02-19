@@ -1,0 +1,188 @@
+[
+  {
+    "id": 1,
+    "titulo": "SERVICIOS DE ASESORÍA FINANCIERA Y ADMINISTRACIÓN DE TRANSPORTE",
+    "descripcion": "Transporte Terrestre y de Pasajeros",
+    "url": "servicio_1",
+    "cards": [
+      {
+        "id": 1,
+        "titulo": "Asesoría financiera para el sector transporte",
+        "items": [
+          "Análisis de costos operativos",
+          "Evaluación financiera de operaciones",
+          "Optimización de recursos"
+        ]
+      },
+      {
+        "id": 2,
+        "titulo": "Costeo de transporte terrestre",
+        "items": [
+          "Cálculo preciso de costos por unidad",
+          "Análisis de rentabilidad por trayecto",
+          "Reducción de gastos operativos"
+        ]
+      },
+      {
+        "id": 3,
+        "titulo": "Administración de costeo en rutas",
+        "items": [
+          "Control y seguimiento de rutas",
+          "Optimización de recorridos",
+          "Mejora en tiempos y costos"
+        ]
+      },
+      {
+        "id": 4,
+        "titulo": "Administración de rutas terrestres",
+        "items": [
+          "Planeación estratégica de rutas",
+          "Eficiencia logística continua"
+        ]
+      },
+      {
+        "id": 5,
+        "titulo": "Maniobras terrestres",
+        "items": [
+          "Coordinación de cargas y descargas",
+          "Operación segura y eficiente"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "SERVICIOS DE LOGÍSTICA INTEGRAL",
+    "descripcion": "Logística, maniobras terrestres, aéreas y marítimas",
+    "url": "servicio_2",
+    "cards": [
+      {
+        "id": 1,
+        "titulo": "Logística marítima",
+        "items": [
+          "Planeación y coordinación de operaciones marítimas",
+          "Gestión de cargas internacionales"
+        ]
+      },
+      {
+        "id": 2,
+        "titulo": "Facilitación de transporte",
+        "items": [
+          "Coordinación logística entre actores",
+          "Optimización de procesos de traslado"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "GESTIÓN DE TRÁMITES Y CUMPLIMIENTO NORMATIVO",
+    "descripcion": "Gestión de permisos ante dependencias del sector comercial y regulaciones no arancelarias",
+    "url": "servicio_3",
+    "cards": [
+      {
+        "id": 1,
+        "titulo": "Gestión de permisos ante dependencias del sector comercial",
+        "items": [
+          "Trámites y permisos oficiales",
+          "Acompañamiento administrativo",
+          "Reducción de riesgos legales"
+        ]
+      },
+      {
+        "id": 2,
+        "titulo": "Asesoría en emisión de Carta Porte",
+        "items": [
+          "Cumplimiento fiscal y legal",
+          "Correcta documentación de transporte",
+          "Prevención de sanciones"
+        ]
+      },
+      {
+        "id": 3,
+        "titulo": "Asesoría en cumplimiento de regulaciones no arancelarias",
+        "items": [
+          "Normativa nacional e internacional",
+          "Control documental",
+          "Seguridad jurídica en operaciones"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "titulo": "MANEJO, EMPAQUE Y EMBALAJE DE MERCANCÍAS",
+    "descripcion": "Servicios Especializados",
+    "url": "servicio_4",
+    "cards": [
+      {
+        "id": 1,
+        "titulo": "Manejo de materiales",
+        "items": [
+          "Operación segura de mercancías",
+          "Control en procesos de carga y descarga"
+        ]
+      },
+      {
+        "id": 2,
+        "titulo": "Empaque y embalaje",
+        "items": [
+          "Protección de mercancía",
+          "Cumplimiento de normas de transporte",
+          "Reducción de daños y pérdidas"
+        ]
+      },
+      {
+        "id": 3,
+        "titulo": "Contenerización de mercancía",
+        "items": [
+          "Optimización del espacio",
+          "Seguridad en traslado",
+          "Eficiencia logística"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "titulo": "ASESORÍA EN CARGAS ESPECIALIZADAS",
+    "descripcion": "Cargas dimensionadas, refrigerada, consolidada u especializada",
+    "url": "servicio_5",
+    "cards": [
+      {
+        "id": 1,
+        "titulo": "Carga dimensionada",
+        "items": [
+          "Planeación logística especializada",
+          "Cumplimiento de normas específicas"
+        ]
+      },
+      {
+        "id": 2,
+        "titulo": "Mercancía que requiere refrigeración",
+        "items": [
+          "Control de temperatura",
+          "Seguridad y conservación del producto"
+        ]
+      },
+      {
+        "id": 3,
+        "titulo": "Carga consolidada",
+        "items": [
+          "Optimización de costos",
+          "Gestión eficiente de envíos múltiples",
+          "Eficiencia logística"
+        ]
+      },
+      {
+        "id": 4,
+        "titulo": "Carga especializada",
+        "items": [
+          "Manejo de mercancías peligrosas",
+          "Cumplimiento normativo",
+          "Seguridad operativa"
+        ]
+      }
+    ]
+  }
+]

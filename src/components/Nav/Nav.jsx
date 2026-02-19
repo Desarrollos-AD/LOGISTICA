@@ -1,48 +1,70 @@
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import "./Nav.scss";
 import logo from "../../assets/img/logo.png";
 
 function Nav() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
-    <div className="barra_header">
+    <header className="barra_header">
       <div className="contenedor">
         <nav className="navbar">
-          <div className=" navbar__logo ">
-            <NavLink to="/" className="">
-              <img
-                src={logo}
-                alt="Logo de la empresa"
-                width="400"
-                height="400"
-                loading="eager"
-              />
+          {/* Logo */}
+          <div className="navbar__logo">
+            <NavLink to="/" onClick={closeMenu}>
+              <img src={logo} alt="Logo de la empresa" loading="eager" />
             </NavLink>
           </div>
-          <ul className="navbar__nav">
-            <li className="navbar__nav--item">
-              <NavLink to="/" className="nav__link">
+
+          {/* Botón Hamburguesa */}
+          <button
+            className={`navbar__toggle ${menuOpen ? "active" : ""}`}
+            onClick={toggleMenu}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          {/* Links */}
+          <ul className={`navbar__nav ${menuOpen ? "open" : ""}`}>
+            <li>
+              <NavLink to="/" className="nav__link" onClick={closeMenu}>
                 Inicio
               </NavLink>
             </li>
-            <li className="navbar__nav--item">
-              <NavLink to="/servicios" className="nav__link">
+            <li>
+              <NavLink
+                to="/servicios"
+                className="nav__link"
+                onClick={closeMenu}
+              >
                 Servicios
               </NavLink>
             </li>
-            <li className="navbar__nav--item">
-              <NavLink to="/nosotros" className="nav__link">
+            <li>
+              <NavLink to="/nosotros" className="nav__link" onClick={closeMenu}>
                 Nosotros
               </NavLink>
             </li>
-            <li className="navbar__nav--item">
-              <NavLink to="/contacto" className="nav__link">
+            <li>
+              <NavLink to="/contacto" className="nav__link" onClick={closeMenu}>
                 Contacto
               </NavLink>
             </li>
           </ul>
         </nav>
       </div>
-    </div>
+    </header>
   );
 }
 

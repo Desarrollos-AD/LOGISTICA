@@ -2,11 +2,19 @@
 @use '../../styles/base/variables' as v;
 
 .enfoque {
-    @include mx.grid(3, 4rem);
+    @include mx.grid(1, 4rem);
     align-items: center;
 
+    @include mx.telefono-mediano {
+        @include mx.grid(3, 2rem);
+    }
+
     &__servicios {
-        grid-column: 1/3;
+        grid-row: 1/2;
+
+        @include mx.telefono-mediano {
+            grid-column: 1/3;
+        }
 
         &--item {
             margin: 3rem 0;
@@ -29,6 +37,14 @@
                 align-items: center;
                 justify-content: space-between;
 
+                a {
+                    color: v.$dark_blue;
+
+                    &:hover {
+                        color: v.$primario;
+                    }
+                }
+
                 .icono {
                     font-size: 2rem;
                 }
@@ -50,7 +66,12 @@
     }
 
     &__items {
-        grid-column: 3/4;
+        grid-row: 2/3;
+        
+        @include mx.telefono-mediano {
+            grid-row: 1/3;
+            grid-column: 3/4;
+        }
 
         p {
             text-align: justify;

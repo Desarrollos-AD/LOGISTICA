@@ -1,0 +1,104 @@
+@use '../../styles/base/variables' as v;
+@use '../../styles/abstracts/mixins' as mx;
+
+.servicios {
+    margin-top: 15rem;
+    @include mx.telefono-mediano {
+        margin-top: 37rem;
+        
+    }
+    @include mx.tablet-pequena {
+        margin-top: 0rem;
+    }
+}
+
+.cards {
+    @include mx.grid(1, 2rem);
+
+    @include mx.telefono-mediano {
+        @include mx.grid(2, 2rem);
+
+    }
+
+    @include mx.tablet-pequena {
+        @include mx.grid(3, 2rem);
+
+    }
+
+    margin: 5rem;
+
+
+    &__items {
+        padding: 2rem;
+        background: #52AADF;
+        background: linear-gradient(186deg, rgba(82, 170, 223, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(14.2px);
+        -webkit-backdrop-filter: blur(14.2px);
+        display: flex;
+        flex-direction: column;
+
+        h4 {
+            color: v.$blanco;
+            font-weight: v.$bold;
+            height: 5rem;
+        }
+
+        p {
+            padding: 1rem 2rem;
+        }
+
+        &::after {
+            content: " ";
+            width: 5rem;
+            height: 5rem;
+            background-color: v.$dark_blue ;
+            position: absolute;
+            border-radius: 50%;
+            top: -1.5rem;
+            left: -1.5rem;
+        }
+
+        &--item {
+
+            &--icono {
+                display: flex;
+                align-items: center;
+
+                .icono {
+                    font-size: 2rem;
+                }
+            }
+
+        }
+    }
+}
+
+.soluciones {
+    height: 50vh;
+    background-image: url("../../assets/img/carousel_2.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+
+    &__contenido {
+        background: rgba(26, 26, 26, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        color: v.$blanco;
+        padding: 5rem 0 10rem 0;
+        line-height: 1.5;
+
+        h2 {
+            color: v.$secundario;
+            font-weight: v.$black;
+            padding: 2rem;
+        }
+
+    }
+}

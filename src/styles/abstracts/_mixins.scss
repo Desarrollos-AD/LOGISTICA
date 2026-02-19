@@ -4,13 +4,12 @@
 @mixin btn($bg_color) {
     display: inline-block;
     padding: 2rem 3rem;
-    background-color: $bg_color;
+    background: $bg_color;
     border-radius: v.$b_radius;
     cursor: pointer;
-    transition: background-color 200ms ease-out;
-
+    transition: opacity 200ms ease-out;
     &:hover {
-        background-color: color.adjust($bg_color, $lightness: -7%);
+        opacity: 0.85;
     }
 }
 

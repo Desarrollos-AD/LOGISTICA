@@ -7,10 +7,6 @@
     overflow: hidden;
 }
 
-section {
-    margin: 4rem 0;
-}
-
 .error {
     background-color: v.$alerta;
     color: v.$blanco;
@@ -91,5 +87,13 @@ section {
                 align-self: flex-start;
             }
         }
+    }
+}
+
+.binetas {
+    li {
+        list-style: inside;
+        padding-left: 0;
+        margin: 1rem 0;
     }
 }

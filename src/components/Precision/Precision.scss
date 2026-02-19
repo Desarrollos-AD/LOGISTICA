@@ -7,12 +7,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 50vh;
     width: 100%;
+
+    @include mx.telefono-mediano {
+        height: 80vh;
+    }
 
     &__info {
         text-align: center;
         line-height: 2;
+        margin-top: 5rem;
+
+        @include mx.telefono-mediano {
+            margin-top: 0rem;
+        }
 
         p {
             font-size: clamp(1.8rem, 2vw, 2.2rem);
@@ -20,14 +29,19 @@
     }
 
     &::before {
-        height: 55rem;
-        width: 55rem;
+        height: 70%;
+        width: 90%;
         position: absolute;
         content: ' ';
         border-radius:
             70% 30% 69% 31% / 38% 39% 61% 62%;
         background-color: v.$primario;
         z-index: -1;
+
+        @include mx.telefono-mediano {
+            height: 55rem;
+            width: 55rem;
+        }
     }
 
     &__item {
@@ -57,24 +71,39 @@
 
         &--1 {
             position: absolute;
-            top: 20%;
-            left: 35%;
-            transform: translate(-50%, -50%);
+            top: 10%;
+            left: 10%;
+            // transform: translate(-50%, -50%);
+
+            @include mx.telefono-pequeno {
+                top: 20%;
+                left: 35%;
+                transform: translate(-50%, -50%);
+            }
         }
 
         &--2 {
             position: absolute;
-            top: 80%;
-            left: 35%;
-            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 10%;
+
+            @include mx.telefono-pequeno {
+                top: 80%;
+                left: 35%;
+                transform: translate(-50%, -50%);
+            }
         }
 
         &--3 {
             position: absolute;
-            position: absolute;
-            top: 47%;
-            left: 74%;
-            transform: translate(-50%, -50%);
+            top: 80%;
+            left: 10%;
+            
+            @include mx.telefono-pequeno {
+                top: 47%;
+                left: 73%;
+                transform: translate(-50%, -50%);
+            }
         }
     }
 }

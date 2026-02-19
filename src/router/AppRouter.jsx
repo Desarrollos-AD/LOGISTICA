@@ -1,8 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import Inicio from "../pages/Inicio";
-import Servicios from "../pages/Servicios";
+import Servicios from "../pages/Servicios/Servicios";
 import Nosotros from "../pages/Nosotros/Nosotros";
 import Contacto from "../pages/Contacto/Contacto";
+import Terminos from "../pages/Terminos";
 
 function AppRouter() {
   return (
@@ -11,7 +12,7 @@ function AppRouter() {
       <Route path="/servicios" element={<Servicios />} />
       <Route path="/nosotros" element={<Nosotros />} />
       <Route path="/contacto" element={<Contacto />} />
-      {/* <Route path="/terminos" element={<Terminos />} /> */}
+      <Route path="/terminos" element={<Terminos />} />
     </Routes>
   );
 }

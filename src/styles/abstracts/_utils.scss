@@ -16,12 +16,16 @@
 }
 
 .intercalar {
-    margin-top: 5rem;
+    margin-top: 7rem;
     @include mx.grid(1, 0rem);
     align-items: center;
-
+    
     @include mx.telefono-grande {
         @include mx.grid(2, 0rem);
+    }
+    
+    @include mx.tablet-pequena {
+        margin-top: 0rem;
     }
 
     &__img {
@@ -35,7 +39,6 @@
     &__conte {
         flex: 1;
         position: relative;
-        margin: 7rem 0 0 0;
 
         &::before {
             content: "";

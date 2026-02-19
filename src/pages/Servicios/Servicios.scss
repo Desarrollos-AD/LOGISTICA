@@ -2,14 +2,13 @@
 @use '../../styles/abstracts/mixins' as mx;
 
 .servicios {
-    margin-top: 15rem;
     @include mx.telefono-mediano {
-        margin-top: 37rem;
-        
+        margin-top: 5rem;
     }
     @include mx.tablet-pequena {
         margin-top: 0rem;
     }
+
 }
 
 .cards {

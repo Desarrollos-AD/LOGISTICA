@@ -45,14 +45,14 @@ const TABS_DATA = [
     title: "Misión",
     description:
       "Brindar soluciones logísticas portuarias y terrestres integrales mediante una gestión estratégica, eficiente y segura, que garantice el cumplimiento normativo, la optimización de recursos y el control operativo en cada etapa del proceso. Nuestra misión es acompañar a las empresas en la coordinación y supervisión de sus operaciones, reduciendo riesgos, mejorando tiempos y fortaleciendo su cadena de suministro con procesos estructurados, información clara y atención personalizada. Trabajamos para que cada operación se ejecute con precisión, responsabilidad y visión a largo plazo.",
-    videoMp4: "/src/assets/video/video1.mp4",
+    videoMp4: "video1.mp4",
   },
   {
     id: 2,
     title: "Visión",
     description:
       "Consolidarnos como una empresa referente en logística portuaria y coordinación operativa a nivel regional y nacional, reconocida por su profesionalismo, capacidad estratégica y altos estándares de control y seguridad. Aspiramos a convertirnos en el socio logístico de confianza para empresas que buscan eficiencia, cumplimiento y crecimiento sostenible, integrando innovación, mejora continua y relaciones de largo plazo basadas en transparencia y resultados. Nuestra visión es construir una organización sólida, preparada para adaptarse a los cambios del entorno logístico y generar valor constante para nuestros clientes.",
-    videoMp4: "/src/assets/video/video2.mp4",
+    videoMp4: "video2.mp4",
   },
 ];
 const YodaSection = () => {
@@ -187,7 +187,7 @@ const YodaSection = () => {
                         playsInline
                         className="video-element"
                       >
-                        <source src={tab.videoMp4} type="video/mp4" />
+                        <source src={`/src/assets/video/${tab.videoMp4}`} type="video/mp4" />
                       </video>
                     </div>
                   ))}

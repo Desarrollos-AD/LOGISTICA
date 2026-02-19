@@ -7,8 +7,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShip } from "@fortawesome/free-solid-svg-icons";
 import Precision from "../../components/Precision/Precision";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function Servicios() {
+   const location = useLocation();
+
+   useEffect(() => {
+     if (location.hash) {
+       const element = document.querySelector(location.hash);
+       if (element) {
+         element.scrollIntoView({ behavior: "smooth" });
+       }
+     }
+   }, [location]);
   return (
     <>
       <Nav />
@@ -19,6 +31,7 @@ function Servicios() {
               Trabajamos para que cada operación fluya con orden, control y cumplimiento."
         img={serviciosImg}
         alt="Imagen Servicios"
+        className="img__degradado"
       />
       <main className="servicios">
         <div className="contenedor">
@@ -91,7 +104,7 @@ function Servicios() {
             className="soluciones__contenido"
           >
             <div className="contenedor">
-              <h2>Soluciones en materia logistica</h2>
+              <h2>Soluciones en materia logística</h2>
               <p>
                 Logística Portuaria Directa es una empresa especializada en
                 ofrecer soluciones logísticas integrales para optimizar las

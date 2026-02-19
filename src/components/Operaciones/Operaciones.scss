@@ -4,11 +4,15 @@
 .rutas {
     display: flex;
     align-items: center;
-    height: 40rem;
+    height: 50rem;
     background-color: v.$dark_blue;
     width: 98%;
     border-radius: 2rem;
     color: v.$blanco;
     margin: 0 auto;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.separador__texto{
+    margin: 5rem 0; 
 }

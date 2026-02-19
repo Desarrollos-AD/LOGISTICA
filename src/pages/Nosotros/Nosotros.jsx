@@ -30,10 +30,9 @@ function Nosotros() {
         >
           <div className="intercalar__img intercalar__img--figura">
             <img
-              className="intercalar__img--figura--efecto"
               src={esencia}
               alt="Imagen nosotros"
-              loading="lazy"
+              className="intercalar__img--figura--efecto"
             />
           </div>
           <div className="intercalar__conte">

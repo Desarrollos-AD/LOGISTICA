@@ -21,7 +21,7 @@ function Nav() {
           {/* Logo */}
           <div className="navbar__logo">
             <NavLink to="/" onClick={closeMenu}>
-              <img src={logo} alt="Logo de la empresa" loading="eager" />
+                <img src={logo} alt={logo} />
             </NavLink>
           </div>
 

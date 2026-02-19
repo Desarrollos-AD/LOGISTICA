@@ -23,10 +23,12 @@
 
             .enfoque__titulos {
                 display: flex;
+                gap: 2rem;
                 align-items: center;
 
                 &--centro {
                     width: 100%;
+                    text-align: left;
                 }
             }
 

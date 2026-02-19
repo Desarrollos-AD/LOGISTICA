@@ -34,6 +34,9 @@
         &--img {
             flex: 1;
             color: v.$blanco;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }

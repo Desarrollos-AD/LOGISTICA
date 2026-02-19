@@ -27,7 +27,6 @@ function Precision() {
         </div>
       </motion.div>
 
-
       <div className="precision">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -74,6 +73,3 @@ function Precision() {
 }
 
 export default Precision;
-
-
-       

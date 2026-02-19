@@ -73,11 +73,10 @@
             position: absolute;
             top: 10%;
             left: 10%;
-            // transform: translate(-50%, -50%);
 
             @include mx.telefono-pequeno {
                 top: 20%;
-                left: 35%;
+                left: 30%;
                 transform: translate(-50%, -50%);
             }
         }
@@ -88,8 +87,8 @@
             left: 10%;
 
             @include mx.telefono-pequeno {
-                top: 80%;
-                left: 35%;
+                top: 75%;
+                left: 30%;
                 transform: translate(-50%, -50%);
             }
         }
@@ -100,8 +99,8 @@
             left: 10%;
             
             @include mx.telefono-pequeno {
-                top: 47%;
-                left: 73%;
+                top: 50%;
+                left: 65%;
                 transform: translate(-50%, -50%);
             }
         }

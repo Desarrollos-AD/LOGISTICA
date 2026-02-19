@@ -1,7 +1,7 @@
 import "./SubHeader.scss";
 import { motion } from "framer-motion";
 
-function SubHeader({ title, subtitle, img, alt }) {
+function SubHeader({ title, subtitle, img, alt, className }) {
   return (
     <div className="subHeader">
       <div className="contenedor">
@@ -16,7 +16,7 @@ function SubHeader({ title, subtitle, img, alt }) {
             <h4>{subtitle}</h4>
           </div>
           <div className="subHeader__contenido--img">
-            <img src={img} alt={alt} />
+            <img className={className} src={img} alt={alt} />
           </div>
         </motion.div>
       </div>

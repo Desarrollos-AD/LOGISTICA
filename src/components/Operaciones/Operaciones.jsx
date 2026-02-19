@@ -13,21 +13,26 @@ function Operaciones() {
         className="rutas stagger-item "
       >
         <div className="contenedor">
-          <h2>Diseñamos rutas, no improvisamos</h2>
-
-          <p>
-            Cada trayecto tiene una razón. Analizamos variables, anticipamos
-            escenarios y trazamos rutas que reducen riesgos y mejoran
-            resultados.
-          </p>
-          <h4>Un buen camino no es el más corto, es el más eficiente.</h4>
-
-          <p>
-            La logística exige precisión diaria. Nuestro enfoque está basado en
-            disciplina operativa, seguimiento continuo y decisiones bien
-            fundamentadas.
-          </p>
-          <p>Cuando el control es claro, la confianza es natura</p>
+          <div className="separador__texto">
+            <h2>Diseñamos rutas, no improvisamos</h2>
+            <p>
+              Cada trayecto tiene una razón. Analizamos variables, anticipamos
+              escenarios y trazamos rutas que reducen riesgos y mejoran
+              resultados.
+            </p>
+          </div>
+          <div className="separador__texto">
+            <h2>
+              Un buen camino no es el más corto,
+              <br /> es el más eficiente.
+            </h2>
+            <p>
+              La logística exige precisión diaria. Nuestro enfoque está basado
+              en disciplina operativa, seguimiento continuo y decisiones bien
+              fundamentadas.
+            </p>
+            <p>Cuando el control es claro, la confianza es natura</p>
+          </div>
         </div>
       </motion.div>
 
@@ -39,7 +44,7 @@ function Operaciones() {
           viewport={{ once: true }}
           className="intercalar__img"
         >
-          <img src={grua} alt="Imagen Grúa" loading="lazy" />
+          <img src={grua} alt="Imagen Grúa" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 60 }}

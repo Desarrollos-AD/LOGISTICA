@@ -41,7 +41,13 @@ img {
     max-width: 100%;
 }
 
-iframe{
+iframe {
     max-width: 100%;
     width: 100%;
+}
+
+.img__degradado {
+    mask-image: linear-gradient(black 80%, transparent);
+    max-width: 80%;
+    margin-bottom: 15rem;
 }

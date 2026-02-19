@@ -1,6 +1,6 @@
 import "./Footer.scss";
 import { Link } from "react-router-dom";
-import logo from "../../../assets/img/logo.png";
+import logo from "../../../assets/img/logo.png?format=avif";
 import { motion } from "framer-motion";
 
 function Footer() {
@@ -70,7 +70,7 @@ function Footer() {
           <div className="footer__contenido">
             <div className="footer__contenido--img">
               <Link href="/">
-                <img src={logo} alt="Logo Logística Portuaria Directa" />
+                <img src={logo} alt={logo} />
               </Link>
             </div>
 

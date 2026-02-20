@@ -56,9 +56,9 @@ function Enfoque() {
             <li>Acompañamiento estratégico continuo</li>
           </ul>
           <div className="btn">
-            <Link to="/contacto" className="btn__primario">
+            <NavLink to="/contacto" className="btn__primario">
               Acerca de nosotros
-            </Link>
+            </NavLink>
           </div>
         </motion.div>
       </section>

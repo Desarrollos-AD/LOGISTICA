@@ -1,43 +1,57 @@
 @use '../../../styles/base/variables' as v;
+@use '../../../styles/abstracts/mixins' as mx;
 
 .footer {
     background-color: v.$primario;
-    margin-top: -.5rem;
+    margin-top: -0.5rem;
 
     &__contenido {
         display: flex;
+        flex-direction: column;
         align-items: center;
         text-align: center;
-        height: 20rem;
+        margin: 5rem 0;
 
-    &--img {
+        @include mx.telefono-mediano {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &--img {
             flex: 1;
-            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 2rem;
-    
+
             img {
-                height: 100%;
-                width: auto;
+                width: 15rem; 
+                height: auto;
                 object-fit: contain;
                 background-color: v.$blanco;
-                padding: 1rem;
+                padding: 1.2rem;
                 border-radius: 50%;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
             }
         }
 
         &--info {
+            flex: 1;
             color: v.$blanco;
-            flex: 2;
 
             a {
                 text-decoration: none;
-                transition: color 0.5s ease-in-out;
+                color: inherit;
+                transition: color 0.3s ease;
 
                 &:hover {
                     color: v.$secundario;
                 }
             }
-
         }
     }
 }

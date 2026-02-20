@@ -12,7 +12,7 @@ function Footer() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           duration: 1,
-          ease: [0.16, 1, 0.3, 1], // easing tipo Apple
+          ease: [0.16, 1, 0.3, 1],
         }}
         viewport={{ once: true, amount: 0.3 }}
         id="wave"
@@ -61,7 +61,7 @@ function Footer() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           duration: 1,
-          ease: [0.16, 1, 0.3, 1], // easing tipo Apple
+          ease: [0.16, 1, 0.3, 1], 
         }}
         viewport={{ once: true, amount: 0.3 }}
         className="footer"

@@ -1,7 +1,7 @@
 import SubHeader from "../../components/layouts/SubHeader/SubHeader";
 import Nav from "../../components/Nav/Nav";
 import nosotros from "../../assets/img/nosotros.png";
-import esencia from "../../assets/img/WE3.png";
+import esencia from "../../assets/img/esencia.jpg";
 import Valores from "../../components/Valores/Valores";
 import { motion } from "framer-motion";
 
